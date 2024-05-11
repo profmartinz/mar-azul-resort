@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+/* Configurações Gerais */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 100%;
+    box-sizing: border-box;
+    font-family: 'Opens Sans', sans-serif;
+}
+
+nav, ul{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+/* Configurações do Header */
+
+header{
+    display: flex;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #fff;
+
+}
+
+header img{
+    width: 200px;
+}
+
+header ul {
+    display: flex;
+}
+
+header li{
+    margin: 0 15px;
+}
+
+header li:first-child{
+    margin-left: 0;
+}
+
+header li:last-child{
+    margin-right: 0;
+}
+
+header li a {
+    color: #131a16;
+}
+
+@media (max-width: 700px){
+    header{
+        flex-direction: column;
+    }
+    header img{
+        margin-bottom: 15px;
+    }
+
+}
+
+/* Configurações do Hero */
+.hero{
+    background-image: url(../imagens/hero.png);
+    background-size: cover;
+    min-height: 100vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hero h1{
+    font-size: 3.2em;
+    margin-top: 15px;
+}
+
+.hero h3{
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.hero .btn{
+    background-color: #fff;
+    border-radius: 4px;
+    color: #131a16;
+    padding: 20px 50px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 700px){
+    .hero h1{
+        font-size: 2.5em;
+    }
+    .hero h3{
+        font-size: 1.5em;
+    }
+
+}
