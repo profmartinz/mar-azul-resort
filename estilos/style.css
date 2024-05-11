@@ -112,3 +112,68 @@ header li a {
     }
 
 }
+
+/* Configurações do Sobre */
+.sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+}
+
+.sobre h2{
+    font-size: 2em;
+    margin-bottom: 35px;
+    text-align: center;
+    color: #131a16;
+}
+.sobre h3{
+    font-size: 1.5em;
+    margin-bottom: 35px;
+    color: #131a16;
+}
+
+.sobre p{
+    font-size: 1em;
+    text-indent: 10px;
+    max-width: 800px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.sobre hr{
+    width: 200px;
+    height: 2px;
+    background-color: #131a16;
+    margin-bottom: 70px;
+    border: none;
+}
+
+.sobre .grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.sobre .grid li {
+    height: 350px;
+    padding: 20px;
+    border-radius: 4px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+}
+
+.sobre .grid li.small {
+    flex-basis: 40%;
+}
+
+.sobre .grid li.large {
+    flex-basis: 60%;
+}
+
+@media (max-width: 700px){
+    .sobre .grid li.small, .sobre .grid li.large {
+        flex-basis: 100%;
+    }    
+}
