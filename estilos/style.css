@@ -129,17 +129,17 @@ header li a {
 }
 .sobre h3{
     font-size: 1.5em;
-    text-align: center;
     margin-bottom: 35px;
+    text-align: center;
     color: #131a16;
 }
 
 .sobre p{
     font-size: 1em;
-    text-indent: 10px;
-    max-width: 800px;
     margin-bottom: 20px;
+    text-indent: 10px;
     text-align: justify;
+    max-width: 800px;
 }
 
 .sobre hr{
@@ -176,5 +176,79 @@ header li a {
 @media (max-width: 700px){
     .sobre .grid li.small, .sobre .grid li.large {
         flex-basis: 100%;
+    }    
+}
+
+/* Configurações das informações */
+
+.informacoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+    background-color: #131a16;
+}
+
+.informacoes h3{
+    font-size: 2em;
+    margin-bottom: 35px;
+    text-align: center;
+    color: white;
+}
+
+.informacoes h4{
+    font-size: 1.5em;
+    margin-bottom: 35px;
+    text-align: center;
+    color: white;
+}
+
+.informacoes p{
+    font-size: 1em;
+    color: white;
+    margin-bottom: 20px;
+    text-indent: 10px;
+    text-align: justify;
+    max-width: 800px;
+}
+
+.informacoes hr{
+    width: 200px;
+    height: 2px;
+    background-color: white;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    border: none;
+}
+
+.informacoes .grid2{
+    width: 100%;
+    display: flex;
+}
+
+.informacoes .grid2 li{
+    padding: 0 15px;
+    text-align: center;
+}
+
+.informacoes .grid2 li i{
+    color: #cfd151;
+    font-size: 3.5em;
+    margin-bottom: 30px;
+}
+
+.informacoes .grid2 li h4{
+    color: #cfd151;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.informacoes .grid2 li p{
+    color: #fff;
+}
+
+@media (max-width: 850px){
+    .informacoes .grid2 {
+        flex-direction: column;
     }    
 }
