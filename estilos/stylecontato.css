@@ -100,6 +100,71 @@ header li a {
     margin-top: 15px;
     color: #fff;
 }
+/* ===================================================================*/
+/* Configurações do Sobre */
+/* ===================================================================*/
+.telefones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+}
+
+.telefones h1{
+    font-size: 2em;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    text-align: center;
+    color: #131a16;
+}
+
+.telefones a{
+    text-decoration: none;
+    font-size: 4em;
+    color: #131a16;
+}
+
+.telefones a:hover{
+    text-decoration: underline;
+}
+
+.telefones ul{
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.telefones ul li{
+    margin-right: 10px;
+}
+
+.telefones ul li:last-child{
+    margin-right: 0px;
+}
+
+.telefones ul li a{
+    color: #131a16;
+    font-size: 5em;
+}
+
+.telefones a.res{
+    text-decoration: none;
+    font-size: 2em;
+    color: #131a16;
+    font-weight: bolder;
+    padding: 5px;
+    border: 1px solid #131a16;
+    background-color: #cfd151;
+    border-radius: 4px;
+    margin-right: 15px;
+    text-transform: uppercase;
+    flex: 1;
+    margin-top: 30px;
+}
+
+.telefones a.res:hover{
+    background-color: #787955;
+    color: #131a16;
+}
 
 /* ===================================================================*/
 
@@ -148,7 +213,7 @@ footer p {
     }
 
     .contatos{
-        background-position: center center;
+        background-position: right center;
     }
 
     .contatos::before {
@@ -170,6 +235,18 @@ footer p {
         width: 100%;
         height: 100%;
         font-size: 2.5em;
+    }
+
+    .telefones a{ 
+        font-size: 2em;
+    }
+
+    .telefones ul li a{
+        font-size: 3em;
+    }
+
+    .telefones a.res{
+        font-size: 1.5em;
     }
 
 }
