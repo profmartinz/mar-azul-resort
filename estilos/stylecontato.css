@@ -1,0 +1,171 @@
+@charset "UTF-8";
+/* ===================================================================*/
+/* Configurações Gerais */
+/* ===================================================================*/
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 100%;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+nav,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+a:hover {
+    opacity: 1;
+}
+/* ===================================================================*/
+/* Configurações do Header */
+/* ===================================================================*/
+header {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #fff;
+
+}
+
+header img {
+    width: 200px;
+}
+
+header ul {
+    display: flex;
+}
+
+header li {
+    margin: 0 15px;
+}
+
+header li:first-child {
+    margin-left: 0;
+}
+
+header li:last-child {
+    margin-right: 0;
+}
+
+header li a {
+    color: #131a16;
+}
+/* ===================================================================*/
+/* Configurações do Contatos */
+/* ===================================================================*/
+.contatos {
+    background-image: url(../imagens/contato.png);
+    background-size: cover;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contatos::before {
+    content: "";
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    height: 37.4%;
+    /* Cor preta com 50% de transparência */
+    background-color: rgba(0, 0, 0, 0.5);  
+}
+
+.contatos h1 {
+    position: absolute;
+    content: "";
+    top: 160px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 3.2em;
+    margin-top: 15px;
+    color: #fff;
+}
+
+/* ===================================================================*/
+
+/* Configurações do Footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #131a16;
+    padding: 50px 0;
+    align-items: center;
+}
+
+footer ul {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+footer ul li {
+    margin-right: 10px;
+}
+
+footer ul li:last-child {
+    margin-right: 0px;
+}
+
+footer ul li a {
+    color: #cfd151;
+    font-size: 2em;
+}
+
+footer p {
+    color: #cfd151;
+    text-align: center;
+}
+
+/*Configurações Media Queries*/
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+    }
+
+    header img {
+        margin-bottom: 15px;
+    }
+
+    .contatos::before {
+        content: "";
+        position: absolute;
+        top: 129px;
+        left: 0;
+        width: 100%;
+        height: 31.7%;
+        /* Cor preta com 50% de transparência */
+        background-color: rgba(0, 0, 0, 0.5);        
+    }
+
+    .contatos h1 {
+        position: absolute;
+        content: "";
+        top: 190px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        font-size: 2.5em;
+    }
+
+}

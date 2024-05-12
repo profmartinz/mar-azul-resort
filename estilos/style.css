@@ -7,6 +7,7 @@
     font-size: 100%;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 
 nav, ul{
@@ -62,16 +63,6 @@ header li a {
     color: #131a16;
 }
 
-@media (max-width: 700px){
-    header{
-        flex-direction: column;
-    }
-    header img{
-        margin-bottom: 15px;
-    }
-
-}
-
 /* Configurações do Hero */
 .hero{
     background-image: url(../imagens/hero.png);
@@ -101,16 +92,6 @@ header li a {
     color: #131a16;
     padding: 20px 50px;
     text-transform: uppercase;
-}
-
-@media (max-width: 700px){
-    .hero h1{
-        font-size: 2.5em;
-    }
-    .hero h3{
-        font-size: 1.5em;
-    }
-
 }
 
 /* Configurações do Sobre */
@@ -171,12 +152,6 @@ header li a {
 
 .sobre .grid li.large {
     flex-basis: 60%;
-}
-
-@media (max-width: 700px){
-    .sobre .grid li.small, .sobre .grid li.large {
-        flex-basis: 100%;
-    }    
 }
 
 /* Configurações das informações */
@@ -247,12 +222,6 @@ header li a {
     color: #fff;
 }
 
-@media (max-width: 850px){
-    .informacoes .grid2 {
-        flex-direction: column;
-    }    
-}
-
 /* Configurações da newsletter */
 
 .newsletter{
@@ -314,13 +283,6 @@ header li a {
     cursor: pointer;
 }
 
-@media (max-width: 700px){
-    .newsletter input {
-        flex-basis: 100%;
-        margin-bottom: 15px;
-    }    
-}
-
 /* Configurações do Footer */
 
 footer {
@@ -352,4 +314,34 @@ footer ul li a{
 footer p{
     color: #cfd151;
     text-align: center;
+}
+
+/*Configurações Media Queries*/
+
+@media (max-width: 700px){
+    header{
+        flex-direction: column;
+    }
+    header img{
+        margin-bottom: 15px;
+    }
+	
+	.hero h1{
+        font-size: 2.5em;
+    }
+    .hero h3{
+        font-size: 1.5em;
+    }
+	.sobre .grid li.small, .sobre .grid li.large {
+        flex-basis: 100%;
+    }
+
+    .informacoes .grid2 {
+        flex-direction: column;
+    } 
+
+	.newsletter input {
+        flex-basis: 100%;
+        margin-bottom: 15px;
+    }
 }
