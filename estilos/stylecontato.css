@@ -147,6 +147,10 @@ footer p {
         margin-bottom: 15px;
     }
 
+    .contatos{
+        background-position: center center;
+    }
+
     .contatos::before {
         content: "";
         position: absolute;
