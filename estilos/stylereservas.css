@@ -1,0 +1,232 @@
+@charset "UTF-8";
+/* ===================================================================*/
+/* Configurações Gerais */
+/* ===================================================================*/
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 100%;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+nav,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+a:hover {
+    opacity: 1;
+}
+/* ===================================================================*/
+/* Configurações do Header */
+/* ===================================================================*/
+header {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #fff;
+
+}
+
+header img {
+    width: 200px;
+}
+
+header ul {
+    display: flex;
+}
+
+header li {
+    margin: 0 15px;
+}
+
+header li:first-child {
+    margin-left: 0;
+}
+
+header li:last-child {
+    margin-right: 0;
+}
+
+header li a {
+    color: #131a16;
+}
+/* ===================================================================*/
+/* Configurações do Contatos */
+/* ===================================================================*/
+.reservas{
+    background-image: url(../imagens/reservas.png);
+    background-size: cover;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.reservas h1 {
+    font-size: 3.2em;
+    margin-top: 5px;
+    color: #fff;
+}
+/* ===================================================================*/
+/* Configurações da Reserva */
+/* ===================================================================*/
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+}
+
+.info h1{
+    font-size: 2em;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    text-align: center;
+    color: #131a16;
+}
+
+.info form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinha os itens à esquerda */
+    background-color: #ffffff; /* Cor do formulário */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.info label {
+    color: #131a16; /* Cor do texto dos labels */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.info input[type="text"],
+.info input[type="tel"],
+.info input[type="email"],
+.info input[type="date"],
+.info input[type="checkbox"] {
+    padding: 10px;
+    margin-bottom: 10px; /* Espaçamento entre os campos */
+    border: 1px solid #131a16; /* Cor da borda dos campos */
+    border-radius: 5px;
+    width: 500px; /* Largura dos campos */
+    box-sizing: border-box;
+}
+
+.info input[type="checkbox"] {
+    width: auto;
+    margin-bottom: 10px; /* Espaçamento entre os checkbox */
+}
+
+.info input[type="submit"] {
+    background-color: #131a16; /* Cor de fundo do botão */
+    color: #ffffff; /* Cor do texto do botão */
+    text-transform: uppercase; /* Transforma o texto em caixa alta */
+    border: none;
+    cursor: pointer;
+    align-self: center; /* Centraliza o botão */
+    padding: 15px 400px; /* Aumenta o preenchimento do botão */
+    border-radius: 5px;
+}
+
+.info input[type="submit"]:hover {
+    background-color: #cfd151; /* Cor de fundo do botão ao passar o mouse */
+    color: #131a16;
+    font-weight: bold;
+}
+
+
+/* ===================================================================*/
+
+/* Configurações do Footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #131a16;
+    padding: 50px 0;
+    align-items: center;
+}
+
+footer ul {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+footer ul li {
+    margin-right: 10px;
+}
+
+footer ul li:last-child {
+    margin-right: 0px;
+}
+
+footer ul li a {
+    color: #cfd151;
+    font-size: 2em;
+}
+
+footer p {
+    color: #cfd151;
+    text-align: center;
+}
+
+/*Configurações Media Queries*/
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+    }
+
+    header img {
+        margin-bottom: 15px;
+    }
+
+    .reservas{
+        background-image: url(../imagens/reservas2.png);
+        background-position: center center;
+    }
+
+    .reservas h1 {
+        margin-top: 120px;
+        font-size: 2.5em;
+    }
+
+    .info input[type="text"],
+    .info input[type="tel"],
+    .info input[type="email"],
+    .info input[type="date"],
+    .info input[type="checkbox"],
+    .info input[type="submit"] {
+        width: 100%; /* Define a largura para 100% em telas menores que 700px */
+        padding: 10px; /* Ajusta o preenchimento */
+    }
+
+    .info h1 {
+        font-size: 20px; /* Altera o tamanho do h1 para 20px em telas menores que 700px */
+    }
+    
+    .info input[type="checkbox"] {
+        width: auto;
+        margin-bottom: 10px;
+        padding: 10px; /* Ajusta o preenchimento do checkbox */
+    }
+
+}
